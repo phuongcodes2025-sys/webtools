@@ -1,0 +1,104 @@
+/*
+#D4E4F7 Light 
+#236AB9 Blue
+#1E90FF Dark Blue
+#FC7307 Orange
+#341C09 Dark Brown
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Griffy&display=swap');
+
+
+  
+
+body {
+    font-family:'Gill Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: rgb(57, 57, 57);
+    line-height: 1.4;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+header {
+    background: linear-gradient(to bottom, #33ccff 50 #ff99cc 50%)
+        /*background: #35424a; */
+        color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+nav {
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+    color: black
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    color: black
+}
+
+h1 {
+    color: green;
+    font-family: "Griffy" 'DM Serif Text', serif;
+    font-size: 3rem;
+}
+h2,h3,h4,h5,h6 {
+    color: gray black;
+    font-familY: "Time news roman", serif;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rrem;
+}   
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rrem;
+
+}
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rrem;
+
+}
+h5 {
+    font-size: 1rem;
+    margin-bottom: 1rrem;
+
+}
+h6 {
+    font-size: 0.8rem;
+    margin-bottom: 1rrem;
+
+}
+p {font-size: 1rem;
+    margin-bottom: 1rem;
+
+a:link,
+a:visited {
+    color: maroon;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+.nav-link:link,
+.nav-link:visited {
+    color:navy;
+}
