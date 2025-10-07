@@ -105,3 +105,7 @@ a:active {
 .nav-link:visited {
     color:navy;
 }
+.fluid-image {
+    max-width: 100%;
+    height: auto;
+}
