@@ -1,0 +1,27 @@
+html,body * {
+    box-sizing: border-box;
+}
+
+main-content {
+    padding: 1rem;
+    width: 60vw;
+    max width: 960px;
+    margin: o 30vw 0 10vw;
+}
+
+page header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    width: 20vw ;
+    padding: 1rem;
+    margin: 1rem  8vw 1rem 2vw;
+    margin top : 1rem;
+    margin lef: 8vw;
+    margin right: clamp(2vw, 5%, 8vm);
+    float: right 
+
+}
