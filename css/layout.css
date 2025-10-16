@@ -5,23 +5,53 @@ html,body * {
 main-content {
     padding: 1rem;
     width: 60vw;
-    max width: 960px;
-    margin: o 30vw 0 10vw;
+    max-width: 960px;
+    margin: 0 30vw 0 10vw;
 }
 
-page header {
+page-header {
     text-align: center;
     margin-bottom: 2rem;
 }
-
+.main-nav {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+    color: black;
+    position: fixed;
+}
 .sidebar {
     background-color: #f4f4f4;
-    width: 20vw ;
+    width: 20vw;
     padding: 1rem;
-    margin: 1rem  8vw 1rem 2vw;
-    margin top : 1rem;
-    margin lef: 8vw;
-    margin right: clamp(2vw, 5%, 8vm);
-    float: right 
-
+    margin: 1rem 8vw 1rem 2vw;
+    float: right;
+    position: sticky;
+    top: 0;
 }
+.figure-right {
+    max-width: 55%;
+    height: auto;
+    float: right;
+    padding: 0 0 0 2rem ;
+}
+.figure-left{
+    max-width: 55%;
+    height: auto;
+    float: right;
+    padding: 2rem  2rem  2rem 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.border-box {
+    border:#ccc 1px solid;
+    padding :1 rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+}    padding: 1rem;
