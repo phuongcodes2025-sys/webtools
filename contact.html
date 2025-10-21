@@ -29,6 +29,9 @@
 <body>
     <!--Page header-->
     <!-- Main content -->
+
+
+
     <h1> Launch Studio </h1>
     <Nav>
         <a href="index.html">Home</a> |
@@ -36,49 +39,104 @@
         <a href="about-us.html">About us</a>
     </Nav>
 
-    <section>
-        <main>
-            <section id="contact">
-                <h2>Contact Us</h2>
+    <main class="main contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+
+
+        <form action="success.html" method="get">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter your message here..."></textarea>
+
+        <label for="file">Upload file:</label>
+        <input type="file" id="file" name="file">
+
+        <label>
+            <input type="checkbox" name="subscribe"> Subscribe to newsletter
+        </label>
+
+        <label><input type="radio" name="contactMethod" value="email" checked> Email</label>
+        <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+        <label for="topic">Topic:</label>
+        <select id="topic" name="topic">
+            <option value="support">Support</option>
+            <option value="sales">Sales</option>
+        </select>
+
+
+
+
+
+        <section>
+            <main>
+
+
+
+
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        We’d love to hear from you! Whether you have a question, a project idea, or just want to say
+                        hello,
+                        our team is here to help. Reach out and we’ll get back to you as soon as possible.
+
+
+
+                    </p>
+
+                    <div>
+                        <p>
+                            📧 Email us:
+                            <a href="mailto:hello@launchstudio.com">hello@launchstudio.com</a>
+                        </p>
+                        <p>
+                            📞 Call us:
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </p>
+                        <p>
+                            📍 Visit us: 123 Innovation Drive, Suite 100, New York, NY
+                        </p>
+                    </div>
+                </section>
+
+                <form name="contact" action="success.html" method="post">
+                    <!-- Form fields go here -->
+                </form>
+
+
+            </main>
+            <footer>
+                <p>&copy; 2025 Phuong Nguyen. All rights </p>
+                <p>Follow us on social media:</p>
                 <p>
-                    We’d love to hear from you! Whether you have a question, a project idea, or just want to say hello,
-                    our team is here to help. Reach out and we’ll get back to you as soon as possible.
+                    <a href="https://facebook.com/launchstudio" target="_blank">Facebook</a> |
+                    <a href="https://instagram.com/launchstudio" target="_blank">Instagram</a> |
+                    <a href="https://twitter.com/launchstudio" target="_blank">Twitter</a> |
+                    <a href="https://linkedin.com/company/launchstudio" target="_blank">LinkedIn</a>
                 </p>
-
-                <div>
-                    <p>
-                        📧 Email us:
-                        <a href="mailto:hello@launchstudio.com">hello@launchstudio.com</a>
-                    </p>
-                    <p>
-                        📞 Call us:
-                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                    </p>
-                    <p>
-                        📍 Visit us: 123 Innovation Drive, Suite 100, New York, NY
-                    </p>
-                </div>
-            </section>
-
-        </main>
-        <footer>
-            <p>&copy; 2025 Phuong Nguyen. All rights </p>
-            <p>Follow us on social media:</p>
-            <p>
-                <a href="https://facebook.com/launchstudio" target="_blank">Facebook</a> |
-                <a href="https://instagram.com/launchstudio" target="_blank">Instagram</a> |
-                <a href="https://twitter.com/launchstudio" target="_blank">Twitter</a> |
-                <a href="https://linkedin.com/company/launchstudio" target="_blank">LinkedIn</a>
-            </p>
-            <ul style="list-style-type: non;">
-                <li><a href=" https://www.dallascollege.edu/">Dallas College</a></li>
-                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                <li><a href="http://https://chatgpt.com/">Chat GPT</a></li>
+                <ul style="list-style-type: non;">
+                    <li><a href=" https://www.dallascollege.edu/">Dallas College</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="http://https://chatgpt.com/">Chat GPT</a></li>
 
 
-            </ul>
-        </footer>
+                </ul>
+            </footer>
 
 </body>
 
