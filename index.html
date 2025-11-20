@@ -33,12 +33,79 @@
     <link rel="stylesheet" href="css/layout.css">
 
     <img class="logo" src="images/logo.png" alt="Launch Studio Logo">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+     <!-- ADDED: theme variables & accessibility focus styles -->
+  <style>
+    :root {
+      --primary: #00796b; /* teal */
+      --accent: #ff7a00;  /* orange */
+      --bg: #f9fafb;
+      --text: #222222;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    .brand {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+    }
+
+    /* ADDED: accessibility focus */
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+      outline: 3px solid rgba(0, 121, 107, 0.18);
+      outline-offset: 2px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .logo {
+      height: 48px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+    .caption-small {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+
 </head>
 
 <body>
     <!--Page header-->
     <!-- Main content -->
-    <h1> Getting Started at Launch Studio ! </h1>
+    
+    <!-- ADDED: Header/navbar with logo and Info button (W3.CSS component) -->
+  <!-- ADDED: Header/navbar with logo and Info button (W3.CSS component) -->
+  <header role="banner" class="w3-container w3-padding">
+    <div class="w3-bar brand" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="w3-bar-item w3-button">
+        <img class="logo" src="images/logo.png" alt="Launch Studio Logo">
+      </a>
+      <button class="w3-bar-item w3-button w3-right" onclick="openModal('infoModal')" aria-controls="infoModal">Info</button>
+    </div>
+ 
+
     <Nav>
         <a href="index.html">Home</a> |
         <a href="contact.html">Contact us</a> |
@@ -46,16 +113,22 @@
         <a href="team.html">Meet the Team</a>   |
         <a href="projects.html">Projects</a>
     </Nav>
+</header>
+<main role="main" id="main-content" class="w3-container w3-margin-top">
 
+<h1> Getting Started at Launch Studio ! </h1>
 
-    <section class="about-me">
+<section class="about-me w3-card-4 w3-padding w3-margin-bottom" aria-labelledby="about-me">
         <h2 id="about-me">About Me</h2>
+        <div class="w3-row">
+            <div class="w3-col s12 m8 l8">
         <p class="intro-text">
             My name is PHUONG NGUYEN, and I come from a background that blends both creativity and problem solving.
             I enjoy working on projects where I can express myself while also building something meaningful that
             others can use. Outside of school, I like to spend time exploring new hobbies, from photography to reading
             about technology.
         </p>
+    </div>
         <figure class="figure-right">
             <a href="images/phuongnguyen.png" target="blank">
                 <img class="fluid-image" src="images/phuongnguyen-md.png" alt="Phuong Nguyen">
@@ -74,12 +147,13 @@
             critically and solving real-world problems.
             I am excited to see where this journey takes me and how I can grow both personally and professionally.
         </p>
-        
+    </div>
     </section>
 
-    <section>
+    <section class="w3-card-4 w3-padding w3-margin-bottom" aria-labelledby="developer-identity">
         <h3 id="developer-identity">Developer Identity</h3>
-
+        <div class="w3-row">
+            <div class="w3-col s12 m8">
         <p>
             As a future web professional, I see myself as someone who is passionate about creating user-friendly and
             visually appealing websites.
@@ -87,11 +161,13 @@
             the needs of users and strives to create solutions that enhance their experience.
             I am committed to continuous learning and staying updated with the latest trends and technologies in web
             development.
-
+        
         </p>
-        <figure>
+    </div>
+    <figure class="w3-col s12 m4">
             <a href="images/Designer.png" target="blank"> <img class="fluid-image" src="images/developer1.png"
-                    alt="Developer Identity"></a>
+                    alt="Developer Identity">
+            </a>
             <figcaption> This is how I see myself as a developer </figcaption>
         </figure>
 
@@ -99,14 +175,10 @@
             For this course, I have chosen to represent myself as an eager learner who is not afraid to experiment.
             Whether I am coding with HTML, styling with CSS, or experimenting with JavaScript, I want to approach
             challenges with creativity and persistence.
-            This mindset is what I believe will help me grow into a confident developer.I am excited to embark on
-            this journey of becoming a web developer, and I look forward to the challenges and opportunities that
-            lie ahead.
-            I believe that with dedication and hard work, I can achieve my goals and make a positive impact in the
-            field of web development.
-            Your page must include three distinct sections, each with a heading and multiple paragraphs:
+        
         </p>
     </section>
+
     <section>
 
         <h2 id="why-web-development">Why Web Development?</h2>
@@ -164,7 +236,37 @@
             life on the web.
         </p>
     </section>
-
+<!-- ADDED: Table (w3-responsive wrapper + w3-table-all, w3-striped, w3-hoverable) -->
+<section id="data-table" class="w3-card-4 w3-padding w3-margin-bottom" aria-labelledby="tableTitle">
+    <h3 id="tableTitle">KEY PEOPLE</h3>
+    <p class="caption-small">You can contact our key people at the studio as following:</p>
+    <div class="w3-responsive" role="region" aria-label="Table data">
+      <table class="w3-table-all w3-striped w3-hoverable" summary="Sample list">
+        <thead>
+          <tr class="w3-light-grey">
+            <th scope="col">Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>PhuongNguyen</td>
+            <td><a href="mailto:phuongnguyen@launchstudio.com">phuongnguyen@launchstudio.com</a></td>
+            <td>Admin</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jadenguyen</td>
+            <td><a href="mailto:jadenguyen@launchstudio.com">jadenguyen@launchstudio.com</a></td>
+            <td>Editor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
     <footer>
         <p>&copy; 2025 Phuong Nguyen. All rights </p>
 
